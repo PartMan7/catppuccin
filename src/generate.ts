@@ -1,16 +1,15 @@
-import { converter, type Oklab, type Color, parseHex, formatHex } from 'culori';
+import { type Color, converter, formatHex, type Oklab } from 'culori';
 
 import type {
+	AnsiColorFormat,
+	AnsiColorGroups,
+	CatppuccinAnsiColors,
+	CatppuccinColors,
 	CatppuccinFlavor,
 	ColorFormat,
-	CatppuccinColors,
-	CatppuccinAnsiColors,
-	AnsiColorGroups,
 	ColorName,
-	AnsiColorFormat,
 } from '@catppuccin/palette';
-import { entries, fromEntries, keys, values } from './utils/object.ts';
-import type { AnsiNames, HexMap } from './types.ts';
+import { entries, fromEntries } from './utils/object.ts';
 
 const COLORS_TO_NOIRIFY: ColorName[] = ['surface2', 'surface1', 'surface0', 'base', 'mantle', 'crust'];
 
@@ -70,7 +69,7 @@ export function MochaToNoir(Mocha: CatppuccinFlavor): CatppuccinFlavor {
 			: format
 	);
 
-	const Noir: CatppuccinFlavor = {
+	return {
 		name: 'Noir',
 		emoji: '🌑',
 		dark: true,
@@ -80,6 +79,4 @@ export function MochaToNoir(Mocha: CatppuccinFlavor): CatppuccinFlavor {
 		ansiColors: noirAnsiColors,
 		ansiColorEntries: entries(noirAnsiColors),
 	};
-
-	return Noir;
 }
