@@ -1,0 +1,22 @@
+{
+  "name": "catppuccin-noir",
+  "version": "1.0.0",
+  "description": "Custom Catppuccin theme (Noir)",
+  "main": "src/index.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PartMan7/catppuccin.git"
+  },
+  "keywords": [
+    "catppuccin"
+  ],
+  "author": "PartMan7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PartMan7/catppuccin/issues"
+  },
+  "homepage": "https://github.com/PartMan7/catppuccin#readme"
+}
