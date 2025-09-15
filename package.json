@@ -1,22 +1,35 @@
 {
-  "name": "catppuccin-noir",
-  "version": "1.0.0",
-  "description": "Custom Catppuccin theme (Noir)",
-  "main": "src/index.json",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PartMan7/catppuccin.git"
-  },
-  "keywords": [
-    "catppuccin"
-  ],
-  "author": "PartMan7",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PartMan7/catppuccin/issues"
-  },
-  "homepage": "https://github.com/PartMan7/catppuccin#readme"
+	"name": "catppuccin-noir",
+	"version": "1.0.0",
+	"description": "Custom Catppuccin theme (Noir)",
+	"main": "src/index.ts",
+	"scripts": {
+		"build": "./scripts/build.sh"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PartMan7/catppuccin.git"
+	},
+	"keywords": [
+		"catppuccin"
+	],
+	"author": "PartMan7",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/PartMan7/catppuccin/issues"
+	},
+	"homepage": "https://github.com/PartMan7/catppuccin#readme",
+	"private": true,
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@types/culori": "^4.0.1",
+		"prettier": "^3.6.2"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@catppuccin/palette": "^1.7.1",
+		"culori": "^4.0.2"
+	}
 }
