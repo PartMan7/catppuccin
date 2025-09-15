@@ -5,7 +5,7 @@ rm -rf built/*
 # Build catppuccin-noir.json
 node --experimental-strip-types -e '
 import Noir from "./src/index.ts";
-console.log(JSON.stringify({ default: Noir }, null, 2));
+console.log(JSON.stringify(Noir, null, 2));
 ' > built/catppuccin-noir.json
 
 mkdir -p built/ghostty
